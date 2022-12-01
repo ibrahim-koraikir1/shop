@@ -7,9 +7,12 @@ import { ProductContext } from '../contexts/ProductContext';
 const ProductDetails = () => {
  
   const { id } = useParams();
+   const { products } = useContext(ProductContext);
+   const { addToCart } = useContext(CartContext);
+  
+  
+ 
 
-  
-  
   return (
     <section className='pt-32 pb-12 lg:py-32 h-screen flex items-center'>
       
